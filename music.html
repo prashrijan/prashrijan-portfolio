@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="site-nav grid">
+      <h1>Prashrijan Shrestha</h1>
+      <ul>
+        <li><a href="index.html" target="_blank">Home</a></li>
+        <li><a href="studySub.html" target="_blank">My Study Subject</a></li>
+        <li><a href="hobbies.html">My Hobbies</a></li>
+        <li><a href="music.html" target="_blank">My Music</a></li>
+        <li><a href="house.php" target="_blank">My House</a></li>
+      </ul>
+      <i class="ri-menu-line"></i>
+    </nav>
+
+    <main class="content">
+        <h2>Musics That helps me to escape reality</h2>
+        <ul class="musics grid">
+          <li>
+            <video src="assets/videos/tere-naina.mp4" controls></video>
+            <a href="https://www.youtube.com/watch?v=rkia6GRzBKE" target="_blank"><h1>Tere Naina Best Audio Song - My Name is Khan|Shah Rukh Khan|Kajol|Shafqat Amanat Ali</h1></a>
+            <a href="https://www.youtube.com/@sonymusicindiaVEVO" target="_blank">SonyMusicIndiaVEVO</a>
+          </li>
+          <li>
+            <video src="assets/videos/kun-faya-kun.mp4" controls></video>
+            <a href="https://www.youtube.com/watch?v=T94PHkuydcw" target="_blank"><h1>Kun Faya Kun Full Video Song Rockstar | Ranbir Kapoor | A.R. Rahman, Javed Ali, Mohit Chauhan</h1></a>
+            <a href="https://www.youtube.com/@tseries" target="_blank">T-Series</a>
+          </li>
+          <li>
+            <video src="assets/videos/vida-karo.mp4" controls></video>
+            <a href="https://www.youtube.com/watch?v=lUul-UbHo_Y" target="_blank"><h1>Vida Karo Lyrical | Amar Singh Chamkila | Diljit Dosanjh, Imtiaz, Arijit Singh, A. R. Rahman, Jonita</h1></a>
+            <a href="https://www.youtube.com/@SaregamaMusic" target="_blank">Saregama Music
+            </a>
+          </li>
+          <li>
+            <audio src="assets/audio/dhairya.mp3" controls></audio>
+            <a href="https://www.youtube.com/watch?v=6FEsFvZ-hqY" target="_blank"><h1>Sajjan Raj Vaidya - Dhairya [Official Release]</h1></a>
+            <a href="https://www.youtube.com/@sajjanrajvaidya" target="_blank">Sajan Raj Vaidya</a>
+          </li>
+          <li>
+            <audio src="assets/audio/phool-sujan.mp3" controls></audio>
+            <a href="https://www.youtube.com/watch?v=ADDQmH6h_z0" target="_blank"><h1>Phool [Oonko Sweater] Full Version</h1></a>
+            <a href="https://www.youtube.com/channel/UCU3y4cAt9TmTI2N8_mIrXjA" target="_blank">Sujan Chapagain</a>
+          </li>
+          <li>
+            <audio src="assets/audio/Je-Chhau-Timi.mp3" controls></audio>
+            <a href="https://www.youtube.com/watch?v=_Tk9_kPpO1U" target="_blank"><h1>Je Chhau Timi</h1></a>
+            <a href="https://www.youtube.com/@SwoopnaSumanofficial" target="_blank">Swoopna Suman</a>
+          </li>
+        </ul>
+      </a>
+    </main>
+    <footer>
+      <div class="grid">
+          <p class="created-by">Created By Prashrijan Shrestha 2024</p>
+          <ul class="social">
+              <li><a href="mailto:shresthaprashrijan@gmail.com"> <i class="ri-mail-line"></i></a></li>
+              <li><a href="tel:+61450528184"> <i class="ri-phone-line"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/prashrijanshrestha/"> <i class="ri-linkedin-box-line"></i></a></li>
+          </ul>
+      </div>
+  </footer>
+  </body>
+  <script>
+    const mediaElements = document.querySelectorAll('video, audio');
+
+    mediaElements.forEach((media) => {
+      media.addEventListener('play', () => {
+        // Pause all other media when one starts playing
+        mediaElements.forEach((el) => {
+          if (el !== media) {
+            el.pause();
+          }
+        });
+      });
+    });
+  </script>
+</html>
