@@ -51,6 +51,25 @@
 
     </main>
 
+    <section id="moving">
+        <h1>Move To Different Sections</h1>
+        <a href="#top">
+            <li>Top</li>
+        </a>
+        <a href="index.html" target="_blank">
+            <li>Home Page</li>
+        </a>
+        <a href="studySub.html" target="_blank">
+            <li>My Study Subjects Page</li>
+        </a>
+        <a href="music.html" target="_blank">
+            <li>My Music Page</li>
+        </a>
+        <a href="hobbies.html" target="_blank">
+            <li>My Hobbies Page</li>
+        </a>
+    </section>
+
     <footer>
         <div class="grid">
             <p class="created-by">Created By Prashrijan Shrestha 2024</p>

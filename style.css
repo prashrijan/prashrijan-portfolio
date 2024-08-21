@@ -77,11 +77,12 @@ h4{
 /* mobile style */
 
 /* home page */
-.site-nav li, footer li{
+.site-nav ul li a, footer ul li a{
     transition: all 0.6s ease;
 }
-.site-nav li:hover, footer li:hover{
-    scale: 1.2;
+.site-nav ul li a:hover, footer ul li a:hover{
+    font-size: 1.2em;
+    color: var(--primary);
 }
 
 .grid{
@@ -101,12 +102,6 @@ h4{
     border-bottom: 2px solid var(--primary);
 }
 
-.site-nav i{
-    padding-top: 20px;
-    grid-column: 8/9;
-    color: var(--primary);
-    font-size: 1.7em;
-}
 
 .site-nav ul{
     display: none;
@@ -316,6 +311,25 @@ tbody tr:hover {
     padding: 30px 20px;
 }
 
+#moving{
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#moving li{
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+}
+
+#moving li:hover{
+    color: var(--primary);
+    scale: 1.1;
+}
+
 
 /* tablet styles */
 @media screen and (min-width: 900px){
@@ -345,9 +359,6 @@ tbody tr:hover {
         justify-content: flex-end;
     }
 
-    .site-nav i{
-        display: none;
-    }
 
     .my-img img{
         width: 70%;
@@ -384,6 +395,9 @@ tbody tr:hover {
         background-size: 25%;
     }
 
+    #moving{
+        display: none;
+    }
 }
 
 /* desktop styles */
@@ -394,6 +408,9 @@ tbody tr:hover {
 
     .site-nav{
         padding: 30px 20px;
+    }
+    .site-nav ul li:hover{
+        color: var(--primary);
     }
 
     .about-myself .my-img{
@@ -515,6 +532,10 @@ tbody tr:hover {
     .musics li:nth-child(6){
         grid-column: 7/10;
         grid-row: 2;
+    }
+
+    #moving{
+        display: none;
     }
 
 }
