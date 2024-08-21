@@ -318,6 +318,7 @@ tbody tr:hover {
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    background-color: #060745;
 }
 
 #moving li{
